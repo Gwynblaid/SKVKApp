@@ -8,7 +8,14 @@
 
 import UIKit
 
+extension MainMenuViewController{
+ 
+}
+
 class MainMenuViewController: UIViewController {
+    
+    @IBOutlet private var mainRightConstrint: NSLayoutConstraint!
+    @IBOutlet var mainView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +28,16 @@ class MainMenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func menuTapped(sender: AnyObject) {
+        if(self.mainRightConstrint.constant == 0){
+            self.mainRightConstrint.constant = -256;
+        }else{
+            self.mainRightConstrint.constant = 0;
+        }
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+            self.view.layoutIfNeeded();
+        });
+    }
 
     /*
     // MARK: - Navigation
@@ -31,5 +48,16 @@ class MainMenuViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        if(size.width != self.mainView.frame.size.width){
+            if(self.mainRightConstrint.constant != 0){
+                self.menuTapped(NSNull);
+            }
+            self.navigationItem.leftBarButtonItem?.enabled = false;
+        }else{
+            self.navigationItem.leftBarButtonItem?.enabled = true;
+        }
+    }
 
 }

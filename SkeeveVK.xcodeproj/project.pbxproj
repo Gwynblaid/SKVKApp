@@ -13,8 +13,8 @@
 		27C211B51A81068F0088B8B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C211B31A81068F0088B8B8 /* LaunchScreen.xib */; };
 		27C211C11A81068F0088B8B8 /* SkeeveVKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C211C01A81068F0088B8B8 /* SkeeveVKTests.swift */; };
 		27C211CE1A8109810088B8B8 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C211CD1A8109810088B8B8 /* MainMenuViewController.swift */; };
-		27C211D01A810ADA0088B8B8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C211CF1A810ADA0088B8B8 /* MenuViewController.swift */; };
 		27C211D21A810AEC0088B8B8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C211D11A810AEC0088B8B8 /* MainViewController.swift */; };
+		27C211D41A811B300088B8B8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C211D31A811B300088B8B8 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 		27C211BF1A81068F0088B8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27C211C01A81068F0088B8B8 /* SkeeveVKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeeveVKTests.swift; sourceTree = "<group>"; };
 		27C211CD1A8109810088B8B8 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = Classes/MainMenuViewController.swift; sourceTree = "<group>"; };
-		27C211CF1A810ADA0088B8B8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Classes/MenuViewController.swift; sourceTree = "<group>"; };
 		27C211D11A810AEC0088B8B8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/MainViewController.swift; sourceTree = "<group>"; };
+		27C211D31A811B300088B8B8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Classes/MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				27C211CD1A8109810088B8B8 /* MainMenuViewController.swift */,
-				27C211CF1A810ADA0088B8B8 /* MenuViewController.swift */,
+				27C211D31A811B300088B8B8 /* MenuViewController.swift */,
 				27C211D11A810AEC0088B8B8 /* MainViewController.swift */,
 			);
 			name = ViewControllers;
@@ -175,6 +175,7 @@
 				TargetAttributes = {
 					27C211A41A81068F0088B8B8 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 226D4X4623;
 					};
 					27C211B91A81068F0088B8B8 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -227,9 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				27C211CE1A8109810088B8B8 /* MainMenuViewController.swift in Sources */,
-				27C211D01A810ADA0088B8B8 /* MenuViewController.swift in Sources */,
 				27C211AB1A81068F0088B8B8 /* AppDelegate.swift in Sources */,
 				27C211D21A810AEC0088B8B8 /* MainViewController.swift in Sources */,
+				27C211D41A811B300088B8B8 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SkeeveVK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -364,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SkeeveVK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +426,7 @@
 				27C211C61A81068F0088B8B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27C211C71A81068F0088B8B8 /* Build configuration list for PBXNativeTarget "SkeeveVKTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +435,7 @@
 				27C211C91A81068F0088B8B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
