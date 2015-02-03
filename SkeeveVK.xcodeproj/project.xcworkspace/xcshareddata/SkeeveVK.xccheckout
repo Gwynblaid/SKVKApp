@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A1C41B0B-ED20-4EC8-A6B1-3A88F3712622</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SkeeveVK</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>26c2a8a2-8860-4b09-83a9-d1f1733806ea++6853</key>
+		<string>http://svn.temafon.ru/ExtAppData/iOS.BeeInfo/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SkeeveVK/SkeeveVK.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>26c2a8a2-8860-4b09-83a9-d1f1733806ea++6853</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>26c2a8a2-8860-4b09-83a9-d1f1733806ea++6853</key>
+		<string>http://svn.temafon.ru/ExtAppData</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://svn.temafon.ru/ExtAppData/iOS.BeeInfo/trunk/SkeeveVK/SkeeveVK.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>26c2a8a2-8860-4b09-83a9-d1f1733806ea++6853</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>26c2a8a2-8860-4b09-83a9-d1f1733806ea++6853</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Projects</string>
+		</dict>
+	</array>
+</dict>
+</plist>
