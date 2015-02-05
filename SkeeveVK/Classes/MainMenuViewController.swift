@@ -12,13 +12,20 @@ extension MainMenuViewController{
  
 }
 
-class MainMenuViewController: UIViewController {
+class MainMenuViewController: UIViewController, VKSdkDelegate {
     
     @IBOutlet private var mainRightConstrint: NSLayoutConstraint!
     @IBOutlet var mainView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        VKSdk.initializeWithDelegate(self, andAppId: "4764530")
+        if(VKSdk.wakeUpSession()){
+            //start working
+        }else{
+            VKSdk.authorize(parseVkPermissionsFromInteger(0b1111101111111111), revokeAccess: true, forceOAuth: false, inApp: true)
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -60,4 +67,27 @@ class MainMenuViewController: UIViewController {
         }
     }
 
+    // MARK: - VKSdkDelegate
+    
+    func vkSdkNeedCaptchaEnter(captchaError: VKError!) {
+        
+    }
+    
+    func vkSdkTokenHasExpired(expiredToken: VKAccessToken!) {
+        VKSdk.authorize(parseVkPermissionsFromInteger(0b1111101111111111), revokeAccess: true)
+    }
+    
+    func vkSdkUserDeniedAccess(authorizationError: VKError!) {
+        print("Ошибка доступа" + authorizationError.errorMessage)
+    }
+    
+    func vkSdkShouldPresentViewController(controller: UIViewController!) {
+        self.presentViewController(controller, animated: true) { () -> Void in
+            
+        }
+    }
+    
+    func vkSdkReceivedNewToken(newToken: VKAccessToken!) {
+        print("Recive new token")
+    }
 }
